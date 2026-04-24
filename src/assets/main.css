@@ -1,35 +1,27 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+:root, * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --bg-color: #253334;
+  --bg-card: #F7F3F0;
+  --bg-button: #7C9A92;
+  --bg-main-text-color: #FFFFFF;
+  --bg-secondary-text-color: #000000;
+  --bg-sub-text-color: rgba(255, 255, 255, 0.7);
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+body {
+  min-height: 100vh;
+  font-family: "Alegreya", sans-serif;
+  background-color: var(--bg-color);
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+ul, li {
+  list-style: none;
 }
